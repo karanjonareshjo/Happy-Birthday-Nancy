@@ -18,7 +18,7 @@ window.addEventListener("resize", () => {
 $(function () {
   // setup garden
   $loveHeart = $("#loveHeart");
-  var offsetX = $loveHeart.width() / 2 - 25;
+  var offsetX = $loveHeart.width() / 2 - 0;
   var offsetY = $loveHeart.height() / 2 - 95;
   $garden = $("#garden");
   gardenCanvas = $garden[0];

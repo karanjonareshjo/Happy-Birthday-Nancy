@@ -9,8 +9,8 @@ var clientHeight = $(window).height();
 $(function () {
   // setup garden
   $loveHeart = $("#loveHeart");
-  var offsetX = $loveHeart.width() / 2;
-  var offsetY = $loveHeart.height() / 2 - 55;
+  var offsetX = $loveHeart.width() / 2 - 25;
+  var offsetY = $loveHeart.height() / 2 - 95;
   $garden = $("#garden");
   gardenCanvas = $garden[0];
   gardenCanvas.width = $("#loveHeart").width();
@@ -119,7 +119,7 @@ function startHeartAnimation() {
 function adjustWordsPosition() {
   $("#words").css({
     position: "absolute",
-    top: offsetY - 150 + "px", // Adjust to center vertically
+    top: offsetY - 165 + "px", // Adjust to center vertically
     left: "50%",
     transform: "translateX(-50%)",
     textAlign: "center",

@@ -12,7 +12,7 @@
 
 #loveHeart {
   /* float: left; */
-  width: 1150px;
+  width: 1010px;
   height: 1250px;
   position: relative;
 }
@@ -23,7 +23,7 @@
 }
 
 #words {
-  font-family: "La Belle Aurore";
+  font-family: "La Belle Aurore", cursive;
   width: 700px;
   height: 400px;
   font-size: 24px;

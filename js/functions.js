@@ -6,6 +6,15 @@
 var clientWidth = $(window).width();
 var clientHeight = $(window).height();
 
+/////new line of code
+var offsetX = window.innerWidth / 2; // Center horizontally
+var offsetY = window.innerHeight / 2.5; // Adjust vertically
+
+window.addEventListener("resize", () => {
+  offsetX = window.innerWidth / 2;
+  offsetY = window.innerHeight / 2.5;
+});
+
 $(function () {
   // setup garden
   $loveHeart = $("#loveHeart");
@@ -78,7 +87,7 @@ function getHeartPoint(angle) {
   var t = angle / Math.PI;
   var x = 32.5 * (16 * Math.pow(Math.sin(t), 3)); ///19.5
   var y =
-    -36.5 * ////20
+    -33.5 * ////20
     (13 * Math.cos(t) -
       5 * Math.cos(2 * t) -
       2 * Math.cos(3 * t) -

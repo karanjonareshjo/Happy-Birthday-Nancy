@@ -72,27 +72,12 @@ $(function () {
   }, Garden.options.growSpeed);
 });
 
-// $(window).resize(function () {
-//   var newWidth = $(window).width();
-//   var newHeight = $(window).height();
-//   if (newWidth != clientWidth && newHeight != clientHeight) {
-//     location.replace(location);
-//   }
-// });
-
-function calculateOffsets() {
-  var $loveHeart = $("#loveHeart");
-  offsetX = $loveHeart.width() / 2;
-  offsetY = $loveHeart.height() / 2 - 95;
-  console.log("Updated OffsetX:", offsetX);
-}
-
-// Calculate initially
-calculateOffsets();
-
-// Recalculate on window resize
 $(window).resize(function () {
-  calculateOffsets();
+  var newWidth = $(window).width();
+  var newHeight = $(window).height();
+  if (newWidth != clientWidth && newHeight != clientHeight) {
+    location.replace(location);
+  }
 });
 
 function getHeartPoint(angle) {

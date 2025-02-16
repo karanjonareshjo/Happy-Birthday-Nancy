@@ -11,8 +11,8 @@
 }
 #loveHeart {
   /* float: left; */
-  width: 1005px;
-  height: 937.5px;
+  width: 1150px;
+  height: 1250px;
   position: relative;
 }
 #garden {
@@ -23,7 +23,7 @@
 
 #words {
   font-family: "La Belle Aurore", cursive;
-  width: 730px;
+  width: 700px;
   height: 400px;
   font-size: 24px;
   color: #666;
@@ -37,7 +37,7 @@
 
 #loveu {
   padding: 5px;
-  font-size: 18px;
+  font-size: 18.5px;
   /* margin-top: 80px;
   margin-right: 120px;
   text-align: right; */
@@ -45,6 +45,7 @@
   opacity: 0; /* Initially invisible but space is preserved */
   transition: opacity 3s ease;
   text-align: center;
+  color: rgba(22, 22, 22, 0.91);
 }
 
 #loveu .signature {

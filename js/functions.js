@@ -76,9 +76,9 @@ $(function () {
 
 function getHeartPoint(angle) {
   var t = angle / Math.PI;
-  var x = 30.5 * (16 * Math.pow(Math.sin(t), 3)); ///19.5
+  var x = 32.5 * (16 * Math.pow(Math.sin(t), 3)); ///19.5
   var y =
-    -30 * ////20
+    -36.5 * ////20
     (13 * Math.cos(t) -
       5 * Math.cos(2 * t) -
       2 * Math.cos(3 * t) -
@@ -119,7 +119,7 @@ function startHeartAnimation() {
 function adjustWordsPosition() {
   $("#words").css({
     position: "absolute",
-    top: offsetY - 165 + "px", // Adjust to center vertically
+    top: offsetY - 175 + "px", // Adjust to center vertically
     left: "50%",
     transform: "translateX(-50%)",
     textAlign: "center",

@@ -6,10 +6,6 @@
 var clientWidth = $(window).width();
 var clientHeight = $(window).height();
 
-/////new line of code
-var offsetX = window.innerWidth / 2; // Center horizontally
-var offsetY = window.innerHeight / 2.5; // Adjust vertically
-
 window.addEventListener("resize", () => {
   offsetX = window.innerWidth / 2;
   offsetY = window.innerHeight / 2.5;
@@ -20,6 +16,7 @@ $(function () {
   $loveHeart = $("#loveHeart");
   var offsetX = $loveHeart.width() / 2 - 0;
   var offsetY = $loveHeart.height() / 2 - 95;
+  console.log("Mobile OffsetX:", offsetX); ////check for Ph.
   $garden = $("#garden");
   gardenCanvas = $garden[0];
   gardenCanvas.width = $("#loveHeart").width();
@@ -82,6 +79,21 @@ $(function () {
 //     location.replace(location);
 //   }
 // });
+
+function calculateOffsets() {
+  var $loveHeart = $("#loveHeart");
+  offsetX = $loveHeart.width() / 2;
+  offsetY = $loveHeart.height() / 2 - 95;
+  console.log("Updated OffsetX:", offsetX);
+}
+
+// Calculate initially
+calculateOffsets();
+
+// Recalculate on window resize
+$(window).resize(function () {
+  calculateOffsets();
+});
 
 function getHeartPoint(angle) {
   var t = angle / Math.PI;
